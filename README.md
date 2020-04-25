@@ -1,6 +1,6 @@
 ## Introduction
 
-XDA is an efficient and robust tool to disassemble instructions and recovers function boundaries of stripped binaries. It outperforms state-of-the-art tools (e.g., IDA Pro, Ghidra, and bidirectional RNN).
+XDA is a tool to disassemble instructions and recovers function boundaries of stripped binaries. It is based on transfer learning using Transformer encoder with masked language modeling objective [1, 2, 3]. It outperforms state-of-the-art tools (e.g., IDA Pro, Ghidra, and bidirectional RNN [4]).
 
 ## Installation
 We recommend using `conda` to setup the environment and install the required packages.
@@ -70,3 +70,12 @@ The scripts loads the pretrained weight parameters from `checkpoints/pretrain_al
 
 - Finetuned parameters.
 - Scripts for generating disassembled instructions and function boundaries based on the finetuned model, given arbitrary byte sequences.
+
+## References
+[1] Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems. 2017.
+
+[2] Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018).
+
+[3] Liu, Yinhan, et al. "Roberta: A robustly optimized bert pretraining approach." arXiv preprint arXiv:1907.11692 (2019).
+
+[4] Shin, Eui Chul Richard, Dawn Song, and Reza Moazzezi. "Recognizing functions in binaries with neural networks." 24th USENIX Security Symposium. 2015.
