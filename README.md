@@ -17,7 +17,7 @@ Then, install the latest Pytorch (assume you have GPU):
 
 `conda install pytorch torchvision cudatoolkit=10.2 -c pytorch`
 
-Finally, enter the xda root directory: e.g., `path/to/xda`
+Finally, enter the xda root directory: e.g., `path/to/xda`, and install XDA:
 
 `pip install --editable .`
 
