@@ -108,11 +108,12 @@ Update Figure 6 in original paper, where we run bi-RNN for 20 more epochs.
 #### Results on obfuscated binaries and more complex software projects
 We compiled all software projects using obfuscator-LLVM, on x64 Linux.
 
-|                          | OpenSSL-1.0.1u | OpenSSL-1.0.1f | ImageMagic-7.0.10-11 | LibTomCrypt-1.18.2 | GMP-6.2.0 |
+
+|                          | <sub>OpenSSL-1.0.1u</sub> | <sub>OpenSSL-1.0.1f</sub> | <sub>ImageMagic-7.0.10-11</sub> | <sub>LibTomCrypt-1.18.2</sub> | <sub>GMP-6.2.0</sub> |
 |:------------------------:|:--------------:|:--------------:|:--------------------:|:------------------:|:---------:|
-|  Control Flow Flattening |        98.1        |      98.6          |         98.9             |           99.1         |     99.3      |
-|    Bogus Control Flow    |        98.5        |      98.6          |            98.9          |           99.5         |     99.1      |
-| Instruction substitution |       99.1         |      99.3          |         99.6             |           99.4         |      99.4     |
+|  <sub>Control Flow Flattening</sub> |        <sub>98.1</sub>        |      <sub>98.6</sub>          |         <sub>98.9</sub>             |           <sub>99.1</sub>         |     <sub>99.3</sub>      |
+|    <sub>Bogus Control Flow</sub>    |        <sub>98.5</sub>        |      <sub>98.6</sub>          |            <sub>98.9</sub>          |           <sub>99.5</sub>         |     <sub>99.1</sub>      |
+| <sub>Instruction substitution</sub> |       <sub>99.1</sub>         |      <sub>99.3</sub>          |         <sub>99.6</sub>             |           <sub>99.4</sub>         |      <sub>99.4</sub>     |
 
 ## Comming soon
 
