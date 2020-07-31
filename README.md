@@ -82,12 +82,28 @@ The scripts loads the pretrained weight parameters from `checkpoints/pretrain_al
 #### Results on running bi-RNN for more epochs
 Update Figure 6 in original paper, where we run bi-RNN for 20 more epochs.
 
-|             |   |
-:-------------------------:|:-------------------------:
-![](birnn/O1.png)  |  ![](birnn/O1.png)
-O1 | O2
-![](birnn/Od.png)  |  ![](birnn/Ox.png)
-Od | Ox
+<table>
+  <tr>
+    <td align="center" colspan="2"><img src="birnn/legend.png" width=300></td>
+  </tr>
+  <tr>
+    <td>O1</td>
+     <td>O2</td>
+  </tr>
+  <tr>
+    <td><img src="birnn/O1.png" width=200></td>
+    <td><img src="birnn/O2.png" width=200></td>
+  </tr>
+  <tr>
+    <td>Od</td>
+     <td>Ox</td>
+  </tr>
+  <tr>
+    <td><img src="birnn/Od.png" width=200></td>
+    <td><img src="birnn/Ox.png" width=200></td>
+  </tr>
+</table>
+
 
 #### Results on obfuscated binaries and more complex software projects
 We compiled all software projects using obfuscator-LLVM, on x64 Linux.
