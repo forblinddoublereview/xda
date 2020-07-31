@@ -66,6 +66,31 @@ To finetune the model, run:
 
 The scripts loads the pretrained weight parameters from `checkpoints/pretrain_all/` and finetunes the model.
 
+## Update since rebuttal (2020/7/28)
+- bi-RNN implementation is released under ./bi-RNN/
+    - To run, download our sample processed SPEC 2017 O1 dataset [training](https://drive.google.com/file/d/1me1b5sbZM8nncVWevwf7v2jEEYNF_jm_/view?usp=sharing), [testing](https://drive.google.com/file/d/1FD_9pXMiDJ61mmmeaQse4xobM8RAzPZN/view?usp=sharing) and put in `birnn/`
+- Testing finetuned model on obfuscated binaries, provided by Obfuscator-LLVM
+    - Control Flow Flattening
+    - Bogus Control Flow
+    - Instruction substitution
+- Testing finetuned model on larger, more complex software Program
+    - OpenSSL-1.0.1u and OpenSSL-1.0.1f
+    - ImageMagic-7.0.10-11
+    - LibTomCrypt-1.18.2
+    - GMP-6.2.0
+
+#### Results on running bi-RNN for more epochs
+Update Figure 6 in original paper, where we run bi-RNN for 20 more epochs.
+
+#### Results on obfuscated binaries and more complex software projects
+We compiled all software projects using obfuscator-LLVM, on x64 Linux.
+
+|                          | OpenSSL-1.0.1u | OpenSSL-1.0.1f | ImageMagic-7.0.10-11 | LibTomCrypt-1.18.2 | GMP-6.2.0 |
+|:------------------------:|:--------------:|:--------------:|:--------------------:|:------------------:|:---------:|
+|  Control Flow Flattening |        98.1        |      98.6          |         98.9             |           99.1         |     99.3      |
+|    Bogus Control Flow    |        98.5        |      98.6          |            98.9          |           99.5         |     99.1      |
+| Instruction substitution |       99.1         |      99.3          |         99.6             |           99.4         |      99.4     |
+
 ## Comming soon
 
 - Finetuned parameters.
