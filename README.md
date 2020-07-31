@@ -106,7 +106,7 @@ Update Figure 6 in original paper, where we run bi-RNN for 20 more epochs.
 
 
 #### Results on obfuscated binaries and more complex software projects
-We compiled all software projects using obfuscator-LLVM, on x64 Linux.
+We compiled all software projects on x64 Linux using [Hikari](https://github.com/HikariObfuscator/Hikari) based on Clang.
 
 
 |                          | <sub>OpenSSL-1.0.1u</sub> | <sub>OpenSSL-1.0.1f</sub> | <sub>ImageMagic-7.0.10-11</sub> | <sub>LibTomCrypt-1.18.2</sub> | <sub>GMP-6.2.0</sub> |
