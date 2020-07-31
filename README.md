@@ -91,7 +91,7 @@ Update Figure 6 in original paper, where we run bi-RNN for 20 more epochs.
      <td>O2</td>
   </tr>
   <tr>
-    <td><img src="birnn/O1.png" width=200></td>
+    <td><img src="birnn/O1-updated.png" width=200></td>
     <td><img src="birnn/O2.png" width=200></td>
   </tr>
   <tr>
